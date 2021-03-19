@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="shortcut icon" href="">
+  <title>GIPHIES</title>
+
+  <nav>
+    <ul>
+      <li id="trending-nav"> <a href="#sec1"> View Trending Gifs </a></li>
+      <li id="search-nav"> <a href="#sec2"> Search Gifs </a></li>
+      <!--<li> <a href="#sec3"> Dsisplay Gif Details </a></li>-->
+      <li id="upload-nav"> <a href="#sec4"> Upload Gif </a></li>
+      <li id="my-uploads"> <a href="#sec5"> Display Uploaded Gifs</a> </li>
+      <li id="favourites-nav"> <a href="#sec6"> Favourite Gifs</a></li>
+    </ul>
+  </nav>
+
+  <link type="text/css" rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div id="theBody">
+    <!-- SHOW TRENDING -->
+    <h3 id="link1"> <a name="sec1"> Trending gifs </h3>
+    <!-- <button id="trending-btn" class="btn btn-primary" style="margin-left: 5px;">Show Trending Gifs</button> -->
+  </div>
+  <div id="main-container">
+
+  </div>
+
+
+  <!-- <button id="moreTrending"> <b>Load More</b></button> -->
+
+
+
+  <div id="searchBtn" class="header">
+    <input type="text" id="text-input" placeholder="Search gifs...">
+    <button id="searchBtn" class="btn btn-primary"><b>Search</b></button>
+    <h3 id="link2"> <a name="sec2"> Search Results </h3>
+    <!--<button id="searchBtn"> <b>Search</b></button> -->
+    <!-- <button id="searchMore" class="btn btn-primary"> <b>Load More</b></button> -->
+  </div>
+
+  <div id="searchDiv"> </div>
+  <!-- <h3> <a name="sec3"> Display Gif Details </h3> -->
+  <h3 id="link3"> <a name="sec4"> Upload Gif </h3>
+  <!-- UPLOADING GIFS-->
+
+  <div class="input-group" id="uploadDiv">
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile03">
+      <label class="custom-file-label" for="inputGroupFile04" id="upload-label">Select gif...</label>
+    </div>
+    <div class="input-group-append">
+      <button class="btn btn-primary" id="upload-file-btn"><b>Upload</b></button>
+    </div>
+  </div>
+
+  <h3 id="link4"> <a name="sec5"> Our Uploads </h3>
+  <div id="uploaded">
+  </div>
+  <div id="upload-container">
+  </div>
+  <h3 id="link5"> <a name="sec6"> Favourite Gifs </h3>
+
+  <div id="favorites"></div>
+  
+  <script type="module" src="./index.js"></script>
+
+  <footer>
+    JS 2020- Team Black 8
+  </footer>
+</body>
+
+</html>
